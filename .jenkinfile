@@ -1,0 +1,30 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Build successful'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying the code'
+            }
+        }
+        stage('Unit Test') {
+            steps {
+                echo 'Testing the code'
+            }
+        }
+        stage('End To End Test') {
+            steps {
+                echo 'Testing the code'
+            }
+        }
+        stage('Release Stage') {
+            steps {
+                echo 'Rleasing the version'
+            }
+        }
+    }
+}
